@@ -1,0 +1,7 @@
+{
+  "name": "estruturacao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
