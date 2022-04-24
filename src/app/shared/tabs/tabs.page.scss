@@ -1,0 +1,34 @@
+:host {
+  ion-tab-button{
+    flex: 0;
+  }
+}
+
+
+.home{
+  height: 92%;
+  z-index: 1;
+  align-items: center;
+
+  ion-tab-bar{
+    background: none;
+    border: none;
+    width: 20%;
+    position: relative;
+    top: 20px;
+
+    ion-tab-button{
+      border: none;
+      border-radius: 50%;
+    }
+  }
+
+}
+
+.tab{
+
+  ion-tab-bar{
+    justify-content: space-between;
+  }
+  }
+
