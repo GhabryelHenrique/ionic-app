@@ -1,6 +1,7 @@
 :host {
   ion-tab-button{
     flex: 0;
+    --color-selected: #fc6011;
   }
 }
 
@@ -13,7 +14,7 @@
   ion-tab-bar{
     background: none;
     border: none;
-    width: 20%;
+    width: 21%;
     position: relative;
     top: 20px;
 
@@ -22,7 +23,6 @@
       border-radius: 50%;
     }
   }
-
 }
 
 .tab{

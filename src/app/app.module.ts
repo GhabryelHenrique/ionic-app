@@ -1,4 +1,5 @@
-import { PagesModule } from './pages/pages.module';
+import { TabsPageModule } from './shared/tabs/tabs.module';
+import { AdminModule } from './module/admin/admin.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    PagesModule,
+    AdminModule,
+    TabsPageModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

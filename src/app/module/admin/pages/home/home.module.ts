@@ -1,5 +1,5 @@
-import { TabsPageModule } from './../../shared/tabs/tabs.module';
-import { SharedModule } from './../../shared/shared.module';
+import { TabsPageModule } from './../../../../shared/tabs/tabs.module';
+import { SharedModule } from './../../../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
