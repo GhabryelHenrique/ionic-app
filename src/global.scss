@@ -26,57 +26,84 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-h2{
+h2 {
   font: bold 30px 'Montserrat' !important;
+  color: var(--primary-font-color);
 }
 
-a{
+a {
   cursor: pointer;
-  color: var(--color-primary);
+  font: bold;
+  color: #FC6011 !important;
 }
 
-p{
+p {
+  color: var(--secondary-font-color);
   text-align: center;
-  color: #7C7D7E;
   font-size: 11px;
 }
 
-input{
+input {
   width: 85%;
   border-radius: 30px;
+  height: 40px;
   padding: 3% 0 3% 8%;
   cursor: text;
   border: none;
   border-color: #707070;
   background-color: #F2F2F2;
   margin-bottom: 20px;
+  color: var(--placeholder-color);
+  font-size: 12px;
+
+}
+input::placeholder{
+  color: var(--placeholder-color);
 }
 
-.aliCenter{
+.div{
+  padding: 25px 0;
+}
+
+.aliCenter {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.btn-primary{
+.btn-primary {
   width: 85%;
+  height: 40px;
   border-radius: 30px;
   padding: 2.5% 0;
   cursor: pointer;
   border: none;
-  background-color: var(--color-primary);
-  color: var(--color-primary-contrast);
+  background-color: var(--primary);
+  color: var(--primary-contrast);
   margin-bottom: 20px;
+  font-size: 12px;
+
 }
 
-.btn-secondary{
+.btn-primary:hover {
+  background-color: var(--primary);
+}
+
+.btn-secondary {
   width: 85%;
   border-radius: 30px;
+  height: 40px;
   padding: 2.5% 0;
   cursor: pointer;
-  border: none;
-  background-color: var(--color-primary-contrast);
-  color: var(--color-primary);
-  border: solid 1px var(--color-primary);
+  background-color: var(--primary-contrast);
+  color: var(--primary);
+  border: solid 1px var(--primary);
+  font-size: 12px;
+
 }
 
+.btn-secondary:hover{
+  background-color: var(--primary-contrast);
+  border: solid 1px var(--primary);
+  color: var(--primary);
+}
