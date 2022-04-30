@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'client-home',
     pathMatch: 'full'
   },
   {
@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'mais',
     loadChildren: () => import('./module/admin/pages/mais/mais.module').then( m => m.MaisPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./module/client/pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'client-home',
+    loadChildren: () => import('./module/client/pages/client-home/client-home.module').then( m => m.ClientHomePageModule)
   },
 ];
 
