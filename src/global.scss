@@ -30,6 +30,11 @@ h2{
   font: bold 30px 'Montserrat' !important;
 }
 
+a{
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
 p{
   text-align: center;
   color: #7C7D7E;
@@ -44,11 +49,13 @@ input{
   border: none;
   border-color: #707070;
   background-color: #F2F2F2;
+  margin-bottom: 20px;
 }
 
-.input{
-  justify-content: center;
+.aliCenter{
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .btn-primary{
@@ -57,5 +64,19 @@ input{
   padding: 2.5% 0;
   cursor: pointer;
   border: none;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+  margin-bottom: 20px;
+}
+
+.btn-secondary{
+  width: 85%;
+  border-radius: 30px;
+  padding: 2.5% 0;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary-contrast);
+  color: var(--color-primary);
+  border: solid 1px var(--color-primary);
 }
 
