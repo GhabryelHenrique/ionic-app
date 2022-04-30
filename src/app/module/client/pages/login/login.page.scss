@@ -1,0 +1,11 @@
+.div{
+  height: 100%;
+  background-color: var(--color-primary-contrast);
+
+  .header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}

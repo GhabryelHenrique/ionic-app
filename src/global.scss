@@ -10,6 +10,7 @@
  */
 
 /* Core CSS required for Ionic components to work properly */
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
@@ -24,3 +25,37 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+h2{
+  font: bold 30px 'Montserrat' !important;
+}
+
+p{
+  text-align: center;
+  color: #7C7D7E;
+  font-size: 11px;
+}
+
+input{
+  width: 85%;
+  border-radius: 30px;
+  padding: 3% 0 3% 8%;
+  cursor: text;
+  border: none;
+  border-color: #707070;
+  background-color: #F2F2F2;
+}
+
+.input{
+  justify-content: center;
+  display: flex;
+}
+
+.btn-primary{
+  width: 85%;
+  border-radius: 30px;
+  padding: 2.5% 0;
+  cursor: pointer;
+  border: none;
+}
+
