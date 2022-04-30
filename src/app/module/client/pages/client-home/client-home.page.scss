@@ -11,24 +11,4 @@
       bottom: 50px;
     }
   }
-
-  .buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    align-items: center;
-
-    .login{
-      background-color: var(--color-primary);
-      color: var(--color-primary-contrast);
-      margin-bottom: 20px;
-    }
-
-    .register{
-      background-color: var(--color-primary-contrast);
-      color: var(--color-primary);
-      border: solid 1px var(--color-primary);
-    }
-  }
-
 }
