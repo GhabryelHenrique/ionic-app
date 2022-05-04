@@ -1,3 +1,4 @@
+import { RegisterPage } from './module/client/pages/register/register.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./module/client/pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./module/client/pages/register/register.module').then( m => m.RegisterPageModule)
   },
   {
     path: 'client-home',

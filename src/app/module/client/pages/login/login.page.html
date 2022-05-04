@@ -5,20 +5,26 @@
   </div>
 
   <div class="content">
-    <div class="aliCenter form">
-      <input placeholder="Email">
-      <input placeholder="Senha">
-      <button class="btn btn-primary" routerLink="/home">Entrar</button>
-      <p>Esqueceu sua senha?</p>
-    </div>
+    <form class="aliCenter form" [formGroup]="login" (ngSubmit)="onSubmit()">
+      <input formControlName="email" placeholder="Email">
+      <input formControlName="password" placeholder="Senha">
+      <button class="btn btn-primary" type="submit" [disabled]="!login.valid">Entrar</button>
+    </form>
+    <p>Esqueceu sua senha?</p>
 
 
     <div class="aliCenter footer">
       <p>Ou faça Login com</p>
-      <button class="btn btn-primary facebook" routerLink="/home">Login com Facebook</button>
-      <button class="btn btn-primary google" routerLink="/home">Login com Google</button>
+      <button class="btn btn-primary facebook" routerLink="/home">
+        <i class="uil uil-facebook-f"></i>
+        Login com Facebook
+      </button>
+      <button class="btn btn-primary google" routerLink="/home">
+        <i class="uil uil-google"></i>
+        Login com Google
+      </button>
 
-      <p>Ainda não tem conta? <a>Criar Conta grátis</a></p>
+      <p>Ainda não tem conta? <a href="/register">Criar Conta grátis</a></p>
     </div>
   </div>
 </div>
