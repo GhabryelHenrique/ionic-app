@@ -12,7 +12,7 @@ export class AuthService {
 constructor(private http: HttpClient) { }
 
 
-getAll(){
-  return this.http.get<any>(`${this.url}/pokemon/ditto`);
+getAll(body: any){
+  return this.http.post<any>(`${this.url}/register`, body);
 }
 }

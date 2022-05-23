@@ -10,20 +10,20 @@ import { Validators } from '@angular/forms';
 })
 export class RegisterPage implements OnInit {
 
-  register = this.fb.group({
-    name: ['', Validators.required],
+  register: any = this.fb.group({
+    nome: ['', Validators.required],
     email: ['', Validators.required],
-    phone: ['', Validators.required],
     cpf: ['', Validators.required],
-    password: ['', Validators.required],
+    senha: ['', Validators.required],
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+    private authService: AuthService) {}
 
   ngOnInit() {
   }
 
   onSubmit(){
-    console.log(this.register.value);
+    this.authService.getAll(JSON.parse(this.register)).subscribe(() => console.log('foi'));
   }
 }
