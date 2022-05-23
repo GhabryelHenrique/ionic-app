@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseurl: 'https://pokeapi.co/api/v2/'
+  baseurl: 'http://127.0.0.1:5000'
 };
 
 /*
