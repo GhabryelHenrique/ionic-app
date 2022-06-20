@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="div">
+  <div class="aliCenter header">
+    <h2>Criar conta</h2>
+    <p>Crie uma conta para aproveitar o máximo do app</p>
+  </div>
 
-<ion-content>
+  <div class="content">
+    <form class="aliCenter form" [formGroup]="register" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="nome" placeholder="Nome">
+      <input type="text" formControlName="email" placeholder="Email">
+      <input type="number" formControlName="cpf" placeholder="CPF">
+      <input type="password" formControlName="senha" placeholder="Senha">
+      <button class="btn btn-primary" type="submit" [disabled]="!register.valid">Criar Conta</button>
+    </form>
 
-</ion-content>
+    <div class="aliCenter footer">
+      <p>Ja possui conta? <a href="/login">Clique aqui</a> para entrar na sua conta</p>
+    </div>
+  </div>
+</div>

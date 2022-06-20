@@ -1,0 +1,87 @@
+.main {
+  height: 100%;
+  padding: 0 0 25px;
+
+  .header{
+    margin: 20% 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .forgotPassword{
+      align-self: end;
+      padding: 0px 25px;
+      padding-bottom: 10px;
+      font-family: 'Josefin Sans', sans-serif !important;
+      color: #fff;
+    }
+  }
+  .footer {
+    margin-top: 25px;
+
+    .facebook {
+      margin: 25px 0;
+      background-color: #367fc0;
+    }
+
+    .google {
+      background-color: #dd4b39;
+    }
+  }
+}
+
+h2{
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.inputForm{
+  background-color: #f2f2f24d;
+  width: 85%;
+  display: flex;
+  gap: 10px;
+  border-radius: 30px;
+  height: 40px;
+  padding: 0 0 0 6%;
+  cursor: text;
+  border: none;
+  border-color: #707070;
+  margin-bottom: 20px;
+
+  input{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+  }
+
+  input::placeholder{
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: white;
+  }
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif !important;
+    color: white;
+}
+
+.black2{
+  width: 121%;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.loginButton{
+  background-color: #FC6011;
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+  opacity: 1;
+}
