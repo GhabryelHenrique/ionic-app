@@ -12,7 +12,7 @@
 /* Core CSS required for Ionic components to work properly */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@ionic/angular/css/core.css";
-
+@import "./app/shared/scss/reset";
 /* Basic CSS for apps built with Ionic */
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
@@ -20,16 +20,11 @@
 @import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
-
-h2 {
-  font: bold 30px 'Montserrat' !important;
-  color: var(--primary-font-color);
-}
+// @import "~@ionic/angular/css/padding.css";
+// @import "~@ionic/angular/css/float-elements.css";
+// @import "~@ionic/angular/css/text-alignment.css";
+// @import "~@ionic/angular/css/text-transformation.css";
+// @import "~@ionic/angular/css/flex-utils.css";
 
 a {
   cursor: pointer;
@@ -38,27 +33,8 @@ a {
 }
 
 p {
-  color: var(--secondary-font-color);
   text-align: center;
   font-size: 11px;
-}
-
-input {
-  width: 85%;
-  border-radius: 30px;
-  height: 40px;
-  padding: 3% 0 3% 8%;
-  cursor: text;
-  border: none;
-  border-color: #707070;
-  background-color: #F2F2F2;
-  margin-bottom: 20px;
-  color: var(--placeholder-color);
-  font-size: 12px;
-
-}
-input::placeholder{
-  color: var(--placeholder-color);
 }
 
 .div{

@@ -6,11 +6,10 @@
 
   <div class="content">
     <form class="aliCenter form" [formGroup]="register" (ngSubmit)="onSubmit()">
-      <input type="text" formControlName="name" placeholder="Nome">
+      <input type="text" formControlName="nome" placeholder="Nome">
       <input type="text" formControlName="email" placeholder="Email">
-      <input type="number" formControlName="phone" placeholder="Telefone">
       <input type="number" formControlName="cpf" placeholder="CPF">
-      <input type="password" formControlName="password" placeholder="Senha">
+      <input type="password" formControlName="senha" placeholder="Senha">
       <button class="btn btn-primary" type="submit" [disabled]="!register.valid">Criar Conta</button>
     </form>
 

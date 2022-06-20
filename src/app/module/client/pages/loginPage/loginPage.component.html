@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="aliCenter header">
+    <h2>Nome do Aplicativo</h2>
+  </div>
+
+  <div class="content">
+    <form class="aliCenter form" [formGroup]="login" (ngSubmit)="onSubmit()">
+      <div class="inputForm">
+        <img class="inputIcon" src="../../../../../assets/icon/email.svg">
+        <input  formControlName="email" placeholder="Email">
+      </div>
+      <div class="inputForm">
+        <img class="inputIcon" src="../../../../../assets/icon/senha.svg">
+        <input formControlName="password" placeholder="Senha">
+      </div>
+      <p class="forgotPassword">Esqueceu sua senha?</p>
+      <button class="btn btn-primary loginButton" type="submit" [disabled]="!login.valid">Entrar</button>
+    </form>
+  </div>
+
+  <div class="aliCenter footer">
+    <p>Ou faça Login com</p>
+    <button class="btn btn-primary facebook" routerLink="/home">
+      <i class="uil uil-facebook-f"></i>
+      Login com Facebook
+    </button>
+    <button class="btn btn-primary google" routerLink="/home">
+      <i class="uil uil-google"></i>
+      Login com Google
+    </button>
+
+    <p>Ainda não tem conta? <a href="/register">Criar Conta grátis</a></p>
+  </div>
+</div>
+
+<div class="black2">
+  <img src="../../../../../assets/aaaa.jpg"/>
+</div>
