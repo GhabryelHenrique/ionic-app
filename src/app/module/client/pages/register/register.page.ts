@@ -24,6 +24,6 @@ export class RegisterPage implements OnInit {
   }
 
   onSubmit(){
-    this.authService.getAll(JSON.parse(this.register)).subscribe(() => console.log('foi'));
+    this.authService.getAll(this.register.value).subscribe(() => console.log('foi'));
   }
 }

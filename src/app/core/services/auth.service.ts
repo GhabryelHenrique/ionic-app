@@ -11,6 +11,9 @@ export class AuthService {
 
 constructor(private http: HttpClient) { }
 
+login(body: any){
+  return this.http.post<any>(`${this.url}/login`, body);
+}
 
 getAll(body: any){
   return this.http.post<any>(`${this.url}/register`, body);
